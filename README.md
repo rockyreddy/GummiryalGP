@@ -39,3 +39,4 @@ GET /api/complaints · POST /api/complaints · GET /api/complaints/{ticket} · G
 - Database: switch to RDS PostgreSQL (add the Postgres driver, set SPRING_DATASOURCE_URL/USERNAME/PASSWORD).
 - Domain: buy in Route 53, create an ACM certificate (us-east-1 for CloudFront), point the domain at CloudFront.
 - Set CORS_ORIGINS to your domain. Serve everything over HTTPS only (admin uses HTTP Basic), set a strong ADMIN_PASSWORD, and consider rate-limiting login and complaint submission (e.g. AWS WAF).
+=======
